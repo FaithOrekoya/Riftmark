@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --color-rift-navy: #172B3A;
+  --color-rift-charcoal: #252B31;
+  --color-rift-canvas: #F7F8F6;
+  --color-rift-surface: #FFFFFF;
+  --color-rift-muted: #71808A;
+  --color-rift-accent: #B58A61;
+  --color-rift-border: #E5E7E3;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-rift-charcoal);
+    background-color: var(--color-rift-canvas);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-rift-navy);
+  }
+
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

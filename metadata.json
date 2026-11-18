@@ -1,0 +1,6 @@
+{
+  "name": "Riftmark",
+  "description": "Revenue recovery and structured proposal follow-up consulting for architecture, engineering, and construction firms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
